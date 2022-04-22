@@ -1,8 +1,9 @@
 # Automated Determination of RASS Image Quality
-Class Project for COMP 562: Introduction to Machine Learning (Spring 2022)
+Class Project for COMP 562: Introduction to Machine Learning (Spring 2022)<br>
 Zack Hutchens, Andrew Zheng, Xu Tian, Xiao Wu
 
-# Dependencies 
+
+## Dependencies 
  - python > 3.6
  - matplotlib
  - numpy 
