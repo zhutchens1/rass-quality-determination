@@ -1,0 +1,9 @@
+environment : rass-quality-determination
+
+dependencies : 
+    - matplotlib
+    - numpy
+    - scipy
+    - astropy
+    - scikit-learn
+    - pandas
