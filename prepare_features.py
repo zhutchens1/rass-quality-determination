@@ -38,11 +38,9 @@ def get_features(folder,funcs,keys):
     return X
 
 if __name__=='__main__':
-    contrast = lambda im: (np.max(im)-np.min(im))/(np.max(im)+np.min(im))
-
     X = get_features('./exposuremaps/',\
-        [lambda x: np.mean(x)/np.std(x), lambda x: len(x[x<50]), contrast, np.sum], \
-        ['mean_std_ratio', 'N50', 'contrast', 'sum']
+        [lambda x: len(x[x<50]), contrast, np.sum], \
+        [ 'N50', 'contrast', 'sum']
     )
     print(X)
     X.to_csv("features.csv",index=False)
