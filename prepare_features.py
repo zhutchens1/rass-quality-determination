@@ -38,6 +38,8 @@ def get_features(folder,funcs,keys):
     return X
 
 if __name__=='__main__':
+    contrast = lambda im: (np.max(im)-np.min(im))/(np.max(im)+np.min(im))
+
     X = get_features('./exposuremaps/',\
         [lambda x: len(x[x<50]), contrast, np.sum], \
         [ 'N50', 'contrast', 'sum']
